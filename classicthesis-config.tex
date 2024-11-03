@@ -1,62 +1,24 @@
-% ****************************************************************************************************
-% classicthesis-config.tex 
-% formerly known as loadpackages.sty, classicthesis-ldpkg.sty, and classicthesis-preamble.sty 
-% Use it at the beginning of your ClassicThesis.tex, or as a LaTeX Preamble 
-% in your ClassicThesis.{tex,lyx} with \input{classicthesis-config}
-% ****************************************************************************************************  
-% If you like the classicthesis, then I would appreciate a postcard. 
-% My address can be found in the file ClassicThesis.pdf. A collection 
-% of the postcards I received so far is available online at 
-% http://postcards.miede.de
-% ****************************************************************************************************
-
-
-% ****************************************************************************************************
-% 0. Set the encoding of your files. UTF-8 is the only sensible encoding nowadays. If you can't read
-% äöüßáéçèê∂åëæƒÏ€ then change the encoding setting in your editor, not the line below. If your editor
-% does not support utf8 use another editor!
-% ****************************************************************************************************
 \PassOptionsToPackage{utf8}{inputenc}
 	\usepackage{inputenc}
 
-% ****************************************************************************************************
-% 1. Configure classicthesis for your needs here, e.g., remove "drafting" below 
-% in order to deactivate the time-stamp on the pages
-% ****************************************************************************************************
 \PassOptionsToPackage{eulerchapternumbers,listings,drafting,%
 					 pdfspacing,%floatperchapter,%linedheaders,%
-					 subfig,beramono,eulermath,parts}{classicthesis}                                        
-% ********************************************************************
-% Available options for classicthesis.sty 
-% (see ClassicThesis.pdf for more information):
-% drafting
-% parts nochapters linedheaders
-% eulerchapternumbers beramono eulermath pdfspacing minionprospacing
-% tocaligned dottedtoc manychapters
-% listings floatperchapter subfig
-% ********************************************************************
-
-
-% ****************************************************************************************************
-% 2. Personal data and user ad-hoc commands
-% ****************************************************************************************************
-\newcommand{\myTitle}{Emboldening Gig Workers: Integrative Design of Technology and Policy to Support Platform-based Labor\xspace}
-\newcommand{\mySubtitle}{CMU-S3D \xspace}
-\newcommand{\myDegree}{Doktor-Ingenieur (Dr.-Ing.)\xspace}
+					 subfig,beramono,eulermath,parts}{classicthesis}                              
+\newcommand{\myTitle}{Empowering and Collectivizing Gig Workers: \xspace}
+\newcommand{\mySubtitle}{Towards Technology and Policy that Support Platform-based Labor \xspace}
+\newcommand{\myDegree}{Doctor of -Ingenieur (Dr.-Ing.)\xspace}
 \newcommand{\myName}{Jane Hsieh\xspace}
 \newcommand{\myProf}{Haiyi Zhu\xspace}
 \newcommand{\myOtherProf}{Put name here\xspace}
 \newcommand{\mySupervisor}{Put name here\xspace}
 \newcommand{\myFaculty}{Put data here\xspace}
 \newcommand{\myDepartment}{Software and Societal Systems\xspace}
+\newcommand{\mySchool}{School of Computer Science\xspace}
 \newcommand{\myUni}{Carnegie Mellon University\xspace}
-\newcommand{\myLocation}{Pittsburgh, PA\xspace}
-\newcommand{\myTime}{September 2024\xspace}
-\newcommand{\myVersion}{version 4.2\xspace}
+\newcommand{\myLocation}{5000 Forbes Ave, Pittsburgh, PA 15213\xspace}
+\newcommand{\myTime}{Oct 2024\xspace}
+\newcommand{\myVersion}{version 1\xspace}
 
-% ********************************************************************
-% Setup, finetuning, and useful commands
-% ********************************************************************
 \newcounter{dummy} % necessary for correct hyperlinks (to index, bib, etc.)
 \newlength{\abcd} % for ab..z string length calculation
 \providecommand{\mLyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
@@ -64,18 +26,6 @@
 \newcommand{\Ie}{I.\,e.}
 \newcommand{\eg}{e.\,g.}
 \newcommand{\Eg}{E.\,g.} 
-% ****************************************************************************************************
-
-
-% ****************************************************************************************************
-% 3. Loading some handy packages
-% ****************************************************************************************************
-% ******************************************************************** 
-% Packages with options that might require adjustments
-% ******************************************************************** 
-%\PassOptionsToPackage{ngerman,american}{babel}   % change this to your language(s)
-% Spanish languages need extra options in order to work with this template
-%\PassOptionsToPackage{spanish,es-lcroman}{babel}
 	\usepackage{babel}                  
 
 \usepackage{csquotes}
@@ -96,9 +46,7 @@
 \PassOptionsToPackage{fleqn}{amsmath}       % math environments and more by the AMS 
     \usepackage{amsmath}
 
-% ******************************************************************** 
-% General useful packages
-% ******************************************************************** 
+
 \PassOptionsToPackage{T1}{fontenc} % T2A for cyrillics
     \usepackage{fontenc}     
 \usepackage{textcomp} % fix warning with missing font shapes
@@ -248,30 +196,3 @@
 % Last, but not least...
 % ********************************************************************
 \usepackage{classicthesis} 
-% ****************************************************************************************************
-
-
-% ****************************************************************************************************
-% 8. Further adjustments (experimental)
-% ****************************************************************************************************
-% ********************************************************************
-% Changing the text area
-% ********************************************************************
-%\linespread{1.05} % a bit more for Palatino
-%\areaset[current]{312pt}{761pt} % 686 (factor 2.2) + 33 head + 42 head \the\footskip
-%\setlength{\marginparwidth}{7em}%
-%\setlength{\marginparsep}{2em}%
-
-% ********************************************************************
-% Using different fonts
-% ********************************************************************
-%\usepackage[oldstylenums]{kpfonts} % oldstyle notextcomp
-%\usepackage[osf]{libertine}
-%\usepackage[light,condensed,math]{iwona}
-%\renewcommand{\sfdefault}{iwona}
-%\usepackage{lmodern} % <-- no osf support :-(
-%\usepackage{cfr-lm} % 
-%\usepackage[urw-garamond]{mathdesign} <-- no osf support :-(
-%\usepackage[default,osfigures]{opensans} % scale=0.95 
-%\usepackage[sfdefault]{FiraSans}
-% ****************************************************************************************************
