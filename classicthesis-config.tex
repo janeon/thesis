@@ -26,9 +26,21 @@
 \newcommand{\Ie}{I.\,e.}
 \newcommand{\eg}{e.\,g.}
 \newcommand{\Eg}{E.\,g.} 
-	\usepackage{babel}                  
 
+\usepackage{babel}                  
+\usepackage{pifont}
 \usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage{placeins}
+
+% \usepackage{substr}
+% Define a new command to remove text after the colon using \def 
+\def\removeaftercolon#1:#2\removeaftercolon{#1} 
+% Define a helper command to process the \chaptermark argument 
+\def\processchaptermark#1{% 
+\expandafter\removeaftercolon#1:\removeaftercolon } 
+
+
 \PassOptionsToPackage{%
     %backend=biber, %instead of bibtex
 	backend=bibtex8,bibencoding=ascii,%
@@ -118,9 +130,10 @@
 \pdfcompresslevel=9
 \pdfadjustspacing=1 
 \PassOptionsToPackage{pdftex}{graphicx}
-    \usepackage{graphicx} 
- 
-
+\usepackage{graphicx} 
+\usepackage{cleveref}
+\usepackage{xstring} % For string manipulation
+\usepackage{multirow}
 % ********************************************************************
 % Hyperreferences
 % ********************************************************************

@@ -1,0 +1,101 @@
+\begin{table}[h!]
+\centering
+\resizebox{\textwidth}{!} {
+\begin{tabular}{lccccccc}
+\hline
+\textbf{Bidding stage (project-level {frame})} 
+& \multicolumn{1}{l}{}                      
+& \multicolumn{1}{l}{}                                   
+& \multicolumn{1}{l}{}       
+& \multicolumn{1}{l}{}       
+& \multicolumn{1}{l}{}      
+& \multicolumn{1}{l}{} 
+& \multicolumn{1}{l}{} \\ \hline
+{Measure}                  
+& \multicolumn{1}{l} {Mean} & \multicolumn{1}{l}{{Standard Deviation}} & \multicolumn{5}{c}{Correlations} \\ \cline{4-8} 
+& \multicolumn{1}{l}{}                      
+& \multicolumn{1}{l}{}                                    
+& 1                          
+& 2                          
+& 3                         
+& 4                    
+& 5 \\ 
+\hline
+\textit{1. First message standardization} & \ 
+.49{4}                                    
+& {.344}                                               
+& \multicolumn{1}{l}{}       & \multicolumn{1}{l}{}       
+& \multicolumn{1}{l}{}      & \multicolumn{1}{l}{} 
+& \multicolumn{1}{l}{} \\
+\textit{2. Bid text personalization}      
+& .128                                   
+& {.124}                                               
+& \multicolumn{1}{l}{-.106} & \multicolumn{1}{l}{}       
+& \multicolumn{1}{l}{}      & \multicolumn{1}{l}{} 
+& \multicolumn{1}{l}{} \\
+\textit{3. Had prior reviews}             
+& .61{1}                                   
+& .487                                               
+& \multicolumn{1}{l}{.211}  & \multicolumn{1}{l}{-.175} 
+& \multicolumn{1}{l}{}      & \multicolumn{1}{l}{} 
+& \multicolumn{1}{l}{} \\
+\textit{4. Bid price (log)}               
+& 5.05                                     
+& 1.36                                               
+& \multicolumn{1}{l}{.121}  & \multicolumn{1}{l}{.031}  
+& \multicolumn{1}{l}{.043} & \multicolumn{1}{l}{} 
+& \multicolumn{1}{l}{} \\
+\textit{5. Bids won (log)}               
+& 2.12
+& 1.93                                              
+& \multicolumn{1}{l}{{.212}}  & \multicolumn{1}{l}{{-.154}}  
+& \multicolumn{1}{l}{{.758}} & \multicolumn{1}{l}{{.078}} 
+& \multicolumn{1}{l}{} \\ \hline
+
+\textbf{Execution stage (project-level {frame})}
+& \multicolumn{2}{c}{}       & \multicolumn{1}{l}{}       
+& \multicolumn{1}{l}{}       & \multicolumn{1}{l}{}      
+& \multicolumn{1}{l}{}       \\ \hline
+
+\textit{1. Response time standardization} 
+& 7.05e04 & 4.15e03 & & & & &                      \\
+\textit{2. Response time personalization} 
+& {5.22}e5 & 6.23e05 & -.025 & & & &                      \\
+\textit{3. Had prior reviews} 
+& .612 & .487 & -.281 & .008 & & &                      \\
+\textit{4. Bid price (log)}                        
+& 5.06 & 1.36 & .050 & -.021 & 
+.043 & &                     \\
+\textit{5. Freelancer message count}      & 4.82 & 7.90 & -.082                     & .002                      & .107                     & -.018               \\
+\textit{6. Projects completed (log)}
+& {4.35} & {1.38} & {-.107} 
+& {-.005} & {.251} & {.029} & {.040}
+\\ \hline
+
+\textbf{Freelancer - level {frame}}                  
+& \multicolumn{1}{l}{} & \multicolumn{1}{l}{}
+& \multicolumn{1}{l}{}       & \multicolumn{1}{l}{}       & \multicolumn{1}{l}{}      & \multicolumn{1}{l}{} \\ \hline
+\textit{1. Average first message standardization}  & {.472}                                    & .253                                               &                            &                            &                           &                      \\
+\textit{2. Average bid text personalization}       & .13{5}                                   & {.100}                                              & -.{189}                     &                            &                           &                      \\
+\textit{3. Average response time standardization}  & 7.03e04
+& 3.9{8}e03                   
+& -.0{75}
+& .1{59}                &                           &                      \\
+\textit{4. Average response time personalization}  & {5.69e5}                                     & {3.72e04}
+& -.01{8}                     
+& -.0{77}                
+& -.{129}                    &                      \\
+\textit{5. Average bid price (log)}       
+& 4.{86}                                     
+& .8{96}                                            
+& .1{66}                     
+& -.0{36}                 
+& .00{8}               
+& -.0{66} \\
+\textit{6. Had prior reviews average}              & .63{5}                                    & .4{52}                                              & .2{44}                      & -.2{56}                     & -.237                    & {.119} & {.120}       
+\\ \hline
+\end{tabular}
+}
+\caption{Correlations, means and standard deviations of explanatory variables}
+
+\end{table}

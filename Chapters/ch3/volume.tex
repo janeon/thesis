@@ -1,0 +1,16 @@
+\begin{table}[h]
+\centering
+\caption{Freelancer-level regression predicting bid volume with monthly fixed effects.}
+\label{bid_volume}
+\begin{tabular}{ l c c}
+\hline
+\begin{tabular}[c]{@{}l@{}}Dependent Variable:\\ \textbf{Bid volume}\end{tabular}          & \multicolumn{1}{l}{Coefficient}         & \multicolumn{1}{l}{Standard Error}  \\ \hline
+\textit{{Avg. first msg. standardization}}                                             & {36.6}*** & {4.64}                   \\ \hline
+\textit{{Avg. bid text personalization}}                                         & {-8.90 .}  & {4.45} \\ \hline
+\textit{{Avg. bid price (log)}} 
+& {5.79}*** & {.720}  \\ \hline
+\textit{Got reviews}                                                              & {28.0}*** & {2.64}  \\ \hline
+\text{Number of observations}                                                   & \multicolumn{2}{c}{161{49}}                                                             \\ \hline
+\multicolumn{3}{c}{\begin{tabular}[c]{@{}c@{}}*** signifies a p-value \textless .001 and . denotes a p-value \textless .1\\ Errors are clustered by month\end{tabular}} \\ \hline
+\end{tabular}
+\end{table}

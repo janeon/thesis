@@ -1,0 +1,21 @@
+\begin{table}[h]
+\centering
+\caption{Execution stage regression with project fixed-effects predicting job completions.}
+\label{execution_table}
+\begin{tabular}{lcc}
+\hline
+\begin{tabular}[c]{@{}l@{}}Dependent Variable:\\ \textbf{Job completion}\end{tabular} 
+
+& Coefficient   & Standard Error \\ \hline
+\textit{Response time standardization}                                                             & {1.15e-07}  & 1.1{6}e-07 \\ \hline
+\textit{Response time personalization}                                                                   & -9.{10}e-0{9}*** & {1.63}e-09  \\ \hline
+\textit{Had prior reviews}                                                                    & {5.90}e-03***  & {2.01}e-03 \\ \hline
+\textit{Bid price (log)}                                                              & -1.2{7}e-02*** & 1.0{3}e-03 \\ \hline
+\textit{Freelancer message count}                                                        & 8.{1}6e-03***  & 5.{52}e-04\\ \hline
+{\textit{No. completed projects} }
+& {1.36e-03 .}  & {7.33e-04} \\ \hline
+Number of observations                                                          & \multicolumn{2}{c }{1{10,797}}    \\ \hline
+\multicolumn{3}{ c }{*** signifies a p-value \textless .001 and . denotes a p-value < .1}
+ \\ \multicolumn{3}{ c }{Errors are again clustered by project} \\ \hline
+\end{tabular}
+\end{table}

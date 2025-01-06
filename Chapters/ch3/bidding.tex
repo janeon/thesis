@@ -1,0 +1,17 @@
+\crefname{table}{}{} % No prefix for lowercase references
+\begin{table}[h!]
+\centering
+\caption{{ Bidding stage regression model with project fixed effects predicting job awards. }}
+\label{bidding}
+\begin{tabular}{l c c}
+\hline
+\begin{tabular}[c]{@{}l@{}}Dependent Variable:\\ \textbf{Job award}\end{tabular} & Coefficient   & Standard Error  \\ \hline
+\textit{First message standardization}                                            & -.0{30}1*** & 8.2{3}e-05   \\ \hline
+\textit{Bid text personalization}                                                            & .03{58}***  & 2.30e-03   \\ \hline
+\textit{Had prior reviews}                                                            & {3.90e-03}***  & {7.72e-04}     \\ \hline
+\textit{Bid price (log)}                                                      & -.02{58}*** & 5.{36}e-04   \\ \hline
+{\textit{No. bids won (log)}}                                                      & {7.30e-03***} & {2.38e-04}    \\ \hline
+Number of observations                                                  & \multicolumn{2}{c}{603,286}    \\ \hline
+\multicolumn{3}{c}{*** signifies a p-value \textless .001, errors are clustered by project}           \\ \hline
+\end{tabular}
+\end{table}

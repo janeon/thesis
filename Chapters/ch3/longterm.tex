@@ -1,0 +1,19 @@
+\begin{table}[h]
+\centering
+\caption{ Freelancer-level regression predicting monthly revenue with monthly fixed effects.}
+\label{long_term}
+\begin{tabular}{l c c}
+\hline
+\begin{tabular}[c]{@{}l@{}}Dependent Variable:\\ \textbf{Monthly revenue}\end{tabular}  
+& \multicolumn{1}{l }{Coefficient}          & \multicolumn{1}{l }{{Standard Err.}}  \\ \hline
+\textit{{Avg. first msg. standardization}}                                           & {.123}*** & {3.23}e-02                     \\ \hline
+\textit{{Avg. bid text personalization}}                                       & -.1{46}** & 3.{6}2e-02     \\ \hline
+\textit{{Avg. response time standardization}}                                  & -{1.18e-06} & 1.{37}e-06 \\ \hline
+\textit{{Avg. response time personalization}}                                  & -{1.52e-07} & {1.61e-07}    \\ \hline
+\textit{Avg. bid price}                                                      & .2{17}*** & 1.{22}e-02  \\ \hline
+\textit{Had prior reviews average} 
+& .36{0}*** & 1.{61}e-02    \\ \hline
+\textit{Number of observations}                                                 & \multicolumn{2}{c}{161{49}}                                                               \\ \hline
+\multicolumn{3}{ c }{\begin{tabular}[c]{@{}c@{}}\text{*** signifies a p-value \textless .001, ** denotes a p-value \textless .01}\\ \text{Errors are clustered by month}\end{tabular}} \\ \hline
+\end{tabular}
+\end{table}

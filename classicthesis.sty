@@ -38,7 +38,7 @@
 %      option pdfspacing of this package
 %
 % ********************************************************************  
-\NeedsTeXFormat{LaTeX2e}%[2015/01/01] % fixed via latexrelease package, see below
+\NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{classicthesis}[2015/09/06 v4.2 Typographic style for a classic-looking thesis]
 %\PassOptionsToPackage{latest}{latexrelease} % replacement for fixltx2e, emulate newer kernel version if older is detected
     %\RequirePackage{latexrelease} % will be put back in once it is available in more distributions
@@ -183,7 +183,7 @@
 \PassOptionsToPackage{dvipsnames}{xcolor}
     \RequirePackage{xcolor} % [dvipsnames] 
 \definecolor{halfgray}{gray}{0.55} % chapter numbers will be semi transparent .5 .55 .6 .0
-\definecolor{webgreen}{rgb}{0,.5,0}
+\definecolor{webgreen}{rgb}{.5,0,0}
 \definecolor{webbrown}{rgb}{.6,0,0}
 %\definecolor{Maroon}{cmyk}{0, 0.87, 0.68, 0.32}
 %\definecolor{RoyalBlue}{cmyk}{1, 0.50, 0, 0}
@@ -237,39 +237,39 @@
 % ********************************************************************
 % Textblock size
 %*******************************************************
-\@ifpackageloaded{typearea}%
-    {\relax}{%
-        \RequirePackage{typearea}%
-    }
-\ifthenelse{\boolean{@a5paper}}%
-    {% A5
-        \ifthenelse{\boolean{@minionpro}}%
-        {% Minion gets some extra sizes     
-            \PackageInfo{classicthesis}{A5 paper, MinionPro}%
-            \areaset[current]{278pt}{556pt}%
-            \setlength{\marginparwidth}{5em}%
-            \setlength{\marginparsep}{1.25em}%
-        }{% Palatino or other
-            \PackageInfo{classicthesis}{A5 paper, Palatino or other}%
-            \areaset[current]{288pt}{555pt}%
-            \setlength{\marginparwidth}{4em}%
-            \setlength{\marginparsep}{1.25em}%
-        }%
-    }{% A4
-        \ifthenelse{\boolean{@minionpro}}%
-        {% Minion gets some extra sizes         
-            \PackageInfo{classicthesis}{A4 paper, MinionPro}%
-            \areaset[current]{312pt}{684pt}% 609 + 33 + 42 head \the\footskip
-            \setlength{\marginparwidth}{7.5em}%
-            \setlength{\marginparsep}{2em}%
-        }{% Palatino or other
-            \PackageInfo{classicthesis}{A4 paper, Palatino or other}
-            \areaset[current]{336pt}{750pt} % ~ 336 * factor 2 + 33 head + 42 \the\footskip 
-%            \areaset{336pt}{761pt} % 686 (factor 2.2) + 33 head + 42 head \the\footskip 10pt     
-            \setlength{\marginparwidth}{7em}%
-            \setlength{\marginparsep}{2em}%
-        }%
-    }
+% \@ifpackageloaded{typearea}%
+%     {\relax}{%
+%         \RequirePackage{typearea}%
+%     }
+% \ifthenelse{\boolean{@a5paper}}%
+%     {% A5
+%         \ifthenelse{\boolean{@minionpro}}%
+%         {% Minion gets some extra sizes     
+%             \PackageInfo{classicthesis}{A5 paper, MinionPro}%
+%             \areaset[current]{278pt}{556pt}%
+%             \setlength{\marginparwidth}{5em}%
+%             \setlength{\marginparsep}{1.25em}%
+%         }{% Palatino or other
+%             \PackageInfo{classicthesis}{A5 paper, Palatino or other}%
+%             \areaset[current]{288pt}{555pt}%
+%             \setlength{\marginparwidth}{4em}%
+%             \setlength{\marginparsep}{1.25em}%
+%         }%
+%     }{% A4
+%         \ifthenelse{\boolean{@minionpro}}%
+%         {% Minion gets some extra sizes         
+%             \PackageInfo{classicthesis}{A4 paper, MinionPro}%
+%             \areaset[current]{312pt}{684pt}% 609 + 33 + 42 head \the\footskip
+%             \setlength{\marginparwidth}{7.5em}%
+%             \setlength{\marginparsep}{2em}%
+%         }{% Palatino or other
+%             \PackageInfo{classicthesis}{A4 paper, Palatino or other}
+%             \areaset[current]{336pt}{750pt} % ~ 336 * factor 2 + 33 head + 42 \the\footskip 
+% %            \areaset{336pt}{761pt} % 686 (factor 2.2) + 33 head + 42 head \the\footskip 10pt     
+%             \setlength{\marginparwidth}{7em}%
+%             \setlength{\marginparsep}{2em}%
+%         }%
+%     }
 % Here are some suggestions for the text widths and heights:
 % Palatino  10pt: 288--312pt | 609--657pt
 % Palatino  11pt: 312--336pt | 657--705pt
@@ -357,9 +357,7 @@
         {\relax}%
         {\renewcommand{\chaptermark}[1]{\markboth{\spacedlowsmallcaps{#1}}{\spacedlowsmallcaps{#1}}}}
     \renewcommand{\sectionmark}[1]{\markright{\thesection\enspace\spacedlowsmallcaps{#1}}} 
-    \lehead{\mbox{\llap{\small\thepage\kern2em}\headmark\hfil}}
-    \rohead{\mbox{\hfil{\headmark}\rlap{\small\kern2em\thepage}}}
-    \renewcommand{\headfont}{\small}  
+    \lehead{\mbox{\llap{\small\thepage\kern2em}\headmark\hfil}} \rohead{\mbox{\hfil{\headmark}\rlap{\small\kern2em\thepage}}} \renewcommand{\headfont}{\small}
 %    \DeclareRobustCommand{\fixBothHeadlines}[2]{} % <--- ToDo
     % hack to get the content headlines right (thanks, Lorenzo!)
         \def\toc@heading{%
@@ -407,7 +405,10 @@
         {\relax}{\textsc{\MakeTextLowercase{\thesubsubsection}}}{1em}{\normalsize\itshape}        
     % paragraphs
     \titleformat{\paragraph}[runin]
-        {\normalfont\normalsize}{\theparagraph}{0pt}{\spacedlowsmallcaps}    
+        {\normalfont\normalsize\bfseries}
+        {\theparagraph}
+        {0pt}
+        {}
     % descriptionlabels
         \renewcommand{\descriptionlabel}[1]{\hspace*{\labelsep}\spacedlowsmallcaps{#1}}   % spacedlowsmallcaps textit textsc                  
     % spacing
