@@ -9,15 +9,15 @@
 \newcommand{\myDegree}{Doctor of -Ingenieur (Dr.-Ing.)\xspace}
 \newcommand{\myName}{Jane Hsieh\xspace}
 \newcommand{\myProf}{Haiyi Zhu\xspace}
-\newcommand{\myOtherProf}{Put name here\xspace}
-\newcommand{\mySupervisor}{Put name here\xspace}
-\newcommand{\myFaculty}{Put data here\xspace}
+\newcommand{\myOtherProf}{Min Kyung Lee\xspace}
+\newcommand{\mySupervisor}{Sarah Scheffler\xspace}
+\newcommand{\myFaculty}{Jodi Forlizzi\xspace}
 \newcommand{\myDepartment}{Software and Societal Systems\xspace}
 \newcommand{\mySchool}{School of Computer Science\xspace}
 \newcommand{\myUni}{Carnegie Mellon University\xspace}
 \newcommand{\myLocation}{5000 Forbes Ave, Pittsburgh, PA 15213\xspace}
 \newcommand{\myTime}{Oct 2024\xspace}
-\newcommand{\myVersion}{version 1\xspace}
+\newcommand{\myVersion}{\xspace}
 
 \newcounter{dummy} % necessary for correct hyperlinks (to index, bib, etc.)
 \newlength{\abcd} % for ab..z string length calculation
@@ -33,13 +33,28 @@
 \usepackage{graphicx}
 \usepackage{placeins}
 
-% \usepackage{substr}
-% Define a new command to remove text after the colon using \def 
-\def\removeaftercolon#1:#2\removeaftercolon{#1} 
-% Define a helper command to process the \chaptermark argument 
-\def\processchaptermark#1{% 
-\expandafter\removeaftercolon#1:\removeaftercolon } 
+\usepackage[most]{tcolorbox}
+\tcbset{
+    on line, 
+    boxsep=1pt, 
+    left=0pt, 
+    right=3pt, 
+    top=0pt, 
+    bottom=0pt, 
+    colframe=red, 
+    colback=red!10,
+    fontupper=\rmfamily\bfseries
+}
 
+\definecolor{babyblue}{rgb}{0.82, 0.96, 0.936} 
+\definecolor{maroon}{cmyk}{0, 0.87, 0.68, 0.32}
+
+% https://dev.to/anapimolodec/how-to-make-tags-in-overleaf-33pd
+\newcommand{\dr}[1]{\tcbox[colframe=babyblue, colback=babyblue!10]{
+\nameref{#1}}}
+
+\newcommand{\refone}[1]{\hyperref[#1]{\tcbox[colframe=lightgray, colback=lightgray]{#1}}}
+\newcommand{\reftwo}[1]{\hyperref[#1]{\tcbox[colframe=babyblue, colback=babyblue]{#1}}}
 
 \PassOptionsToPackage{%
     %backend=biber, %instead of bibtex
@@ -134,6 +149,8 @@
 \usepackage{cleveref}
 \usepackage{xstring} % For string manipulation
 \usepackage{multirow}
+\usepackage{authblk}
+\usepackage{ulem}
 % ********************************************************************
 % Hyperreferences
 % ********************************************************************
