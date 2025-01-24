@@ -1,18 +1,32 @@
 %************************************************
-\chapter{Proposed Work: Co-designing Worker Stories to Unearth and Represent Hidden Gig Labor, Mechanisms \& Conditions}\label{ch:mathtest} 
+\chapter{Proposed Contributions: Co-designing Data Production for Policy}\label{proposal} 
+In our initial evaluation of Gig2Gether (Chapter \ref{6gig2gether}), workers expressed desires to 1) collectively understand platform functionalities by exchanging experiential information and 2) share such insights with regulators, advocates and policy experts to affect policymaking --- demonstrating the potential of a data-sharing tool to intervene in the current barriers that obstruct information exchange between workers and to supporting stakeholders. But while workers showed an affinity for the idea of sharing data with policy experts and had ideas for policy initiatives to support that aligned with the receipients of their data (see Chapter \ref{support}), it remains unclear how such (aggregate) data should be presented and visualized. 
 
-%************************************************
-% \section{Introduction \& Related Works}
+Previous work uncovered how experienced workers developed strategies to cope with the changing nature of platform algorithms \cite{pacify, Jarrahi2019-if}, while more novice workers worked to improve understandings of platforms' underlying algorithmic mechanisms \cite{peersupport}. However, to present understandings on the constantly evolving (but too often unannounced \cite{6B4U}) nature of platform algorithms to the general gig workforce, such insights (currently available online in spaces such as loosely organized forums) require organization and visualization \cite{peersupport}. Thus, I propose investigating potential methods of data visualization that balance curated showcases of grounded experiential worker insights with accurate data aggregations that are digestible and influential to policymaking. 
 
-% Datasharing collectives hold promise for workers to 1) gain understanding of self and the collectives so as to enable goal-setting and self-improvements 2) hold platforms and customers/clients accountable for responsible (as well as minimal) data collection practices and 3) collectively shape and propel policy decisions related to their working conditions. In prior literature, scholars compile evidence for the effectiveness of tech-enabled collective organization for providing strategic value (i.e. information sharing, collective resource-mobilisation, networking and (response-)generation) in moments of community crisis -- i.e. disasters \citep{selforg}. 
-% In domains of social media (e.g., WhatsApp Explorer \citep{whatsapp}, Instagram Data Donation \citep{insta}, TikTok Social Media Donator \citep{tiktok}) and healthcare (e.g., Health Data Exploration \cite{hde}, personal data donations in Germany \cite{pddGermany}), previous investigations leveraged data donation tools to explore user engagement (of teens), effects of social media on elections/collective violence, as well as opportunities for health-focused citizen science. Such studies of data donation tools highlight ongoing issues, which include: motivations for sharing \cite{hde, willingness}, issues of access (e.g., privacy \cite{best}, ethics \cite{willingness}, bias \cite{nonparticipation}, accessibility \cite{donations_health} and consent \cite{port, osd2f}), as well as data quality \cite{pddGermany} and security \cite{osd2f}. While some of these previous tools provide guidelines for establishing guardrails that define rules on how researchers should preprocess and filter donated data before analysis \cite{module}, none explored the possibility of allowing workers to define and construct their own data types/initiatives -- an action that can affords users further agency, fosters collective identity, and offers users an avenue to collaboratively influence policymaking.
+Related scholarship also compiled evidence for the effectiveness of tech-enabled collective organization for providing strategic value (i.e., information sharing, collective resource-mobilisation, networking and response generation) in times of community crisis \citep{selforg}. But it is imperative to devise mechanisms for collectivism that anticipate change, in addition to only organizing when responding/reacting to crises. Building upon our nascent approach toward collective worker data-sharng, this chapter also strives to identify modes of (cross-platform and cross-stakeholder) interaction that will best support and incentivize community building, sustainable governance and data-sharing.
 
-% In the context of gig work, prior works explored potential infrastructures for collective data institutions \cite{steinyou}, designed sousveillance tools to counter platform/customer surveillance \cite{sousveillance}, and considered how data collectives can advance relevant regulation \cite{collectives}. Meanwhile, the research community increasingly call for more qualitative engagements (as opposed to strictly quantitative empirical measurements) with (worker) communities \cite{talkfutures, diary}.
+% In the proposed work (Chapter \ref{proposal}), I outline plans to co-design data production mechanisms while aligning the policy objectives of both workers and policy experts. In particular, I propose a multistage process that engages both stakeholder groups in co-deliberation to identify methods of data visualization, cross-stakeholder interactions, and governance for collective data-sharing systems, using possible extensions of Gig2Gether as a boundary object. I began with a review of possible existing mechanisms from the system-building literature and follow-up to describe steps of the protocol for the iterative and stakeholder-centered development process.
 
-% In our initial evaluation of Gig2Gether (Chapter X), workers expressed desires to 1) collectively understand platform functionalities by exchanging experiential information and 
-% 2) gather additional (and evolving) data types to gain a better grasp of how platform algorithms operate. Thus, we propose the following work to address the needs workers expressed for diversified data types (across various gig work domains and platforms), as well as to accommodate the ever-evolving nature of platform algorithms (and related data they collect).
+\section{Related Works}
+Datasharing collectives hold promise for workers to 1) gain understanding of self-improvement strategies for individual career advancement 2) gather evidence for collective sensemaking of existing and changing platform mechanisms, and 3) collectively shape and propel policy decisions related to their working conditions. 
+% 2) hold platforms and customers/clients accountable for responsible (as well as minimal) data collection practices and 
+In domains of social media (e.g., WhatsApp Explorer \citep{whatsapp}, Instagram Data Donation \citep{instagram}, TikTok Social Media Donator \citep{zannettou2023leveraging}) and healthcare (e.g., Health Data Exploration \cite{bietz2019data}, personal data donations in Germany \cite{strotbaum2019your}), previous investigations leveraged data donation tools to explore user engagement (of teens), effects of social media on elections/collective violence, as well as opportunities for health-focused citizen science. Such studies of data donation tools highlight ongoing issues, which include: motivations for sharing \cite{bietz2019data, willingness}, issues of access (e.g., privacy \cite{carriere2023best}, ethics \cite{willingness}, bias \cite{nonparticipation}, accessibility \cite{donations_health} and consent \cite{boeschoten2023port, osd2f}), as well as data quality \cite{strotbaum2019your} and security \cite{osd2f}. 
+
+%While some of these previous tools provide guidelines for establishing guardrails that define rules on how researchers should preprocess and filter donated data before analysis \cite{module}, none explored the possibility of allowing workers to define and construct their own data types/initiatives -- an action that can affords users further agency, fosters collective identity, and offers users an avenue to collaboratively influence policymaking.
+
+In the context of gig work, prior works explored potential infrastructures for collective data institutions \cite{uuapp}, designed sousveillance tools to counter platform/customer surveillance \cite{sousveillance, privacy}, and considered how data collectives can advance relevant regulation \cite{collectives}. These works, as well as Chapter \ref{support}, surface key tensions between privacy and accurate data aggregation \cite{privacy}, trust and data reliability \cite{uuapp}, as well as potential for policy influence and data integrity \cite{supporting}. To promote safe, just and sustainable forms of worker data-sharing that still maintain data accuracy, reliability and integrity, we must explore potential methods of data production to accommodate the objectives of both data producers and recipients. For instance, refined controls for privacy and consent may serve to motivate workers engagements in data contributions --- 
+% Prior works revealed a plethora of privacy concerns that gig workers shared in online forums, including issues with the overt (and often covert) methods of data collection by both platforms and clients -- leading to feelings of surveillance, as well as worries around asymmetrical amounts of information disclosures they must provide as compared to customers \cite{privacy}. 
+% In these online forums, researchers observed qualitative forms of narrative sharing through advice-seeking and -giving, as well as  instances of venting/ranting/commiseration \cite{privacy, peersupport} -- phenonmena that we also observed on the Stories feature of Gig2Gether. 
+by recognizing and addressing the discomfort and privacy concerns associated with disclosing personal information with others, we can foster more productive, trusting and collaborative environments of peer support.
+% (which are present even for collaborating members of the same team \cite{toshare}), especially since 1) such discomfort cause individuals to avoid seeking help \cite{avoidance}, and 2) self-disclosures directly impact well-being through various mechanisms \cite{disclosurewell, psychological}.
+
+
+% Meanwhile, the research community increasingly calls for more qualitative engagements (as opposed to strictly quantitative empirical measurements) with (worker) communities \cite{talkfutures, diary}.
+
 
 % % three motivations prompting workers to engage with the datasharing tool: (1) potentials for workers to improve self or others through strategy-learning or sharing (2) desires to 
+
 % Goal 1: \textbf{Worker-Defined Data Types \& Initiatives}. Develop methods for workers to define data forms/units/types for sharing with the community, so as to 
 % \begin{enumerate}
 %     \item enable worker-led documentation and case-building of unnecessary data collection --- policymaking \& litigation purposes
@@ -22,7 +36,6 @@
 % \end{enumerate}
 % \rule{\linewidth}{0.5mm}
 
-% Beyond a sustainable workflow that tackles the diverse and ever-evolving nature of platforms, refined controls for privacy and consent might also motivate workers to engage in data contributions. Prior works revealed a plethora of privacy concerns that gig workers shared in online forums, including issues with the overt (and often covert) methods of data collection by both platforms and clients -- leading to feelings of surveillance, as well as worries around asymmetrical amounts of information disclosures they must provide as compared to customers \cite{privacy}. In these online forums, researchers observed qualitative forms of narrative sharing through advice-seeking and -giving, as well as  instances of venting/ranting/commiseration \cite{privacy, peersupport} -- phenonmena that we also observed on the Stories feature of Gig2Gether. While we intend to continue supporting such interactions, we must recognize and address the discomfort and privacy concerns associated with disclosing personal information with others (present even for collaborating members of the same team \cite{toshare}), especially since 1) such discomfort cause individuals to avoid seeking help \cite{avoidance}, and 2) self-disclosures directly impact well-being through various mechanisms \cite{disclosurewell, psychological}.
 
 % % \begin{itemize}
 % %     \item inherent tradeoffs between privacy and bias
@@ -44,14 +57,14 @@
 %         \item Methods for organizing information and cross-stakeholder communication to support collective information sharing and decision making around policies related to platform-based labor
 %     \end{enumerate}
 
-% \section{Research Questions}
-% \textbf{RQ1}: To what extent can workers abstractly describe desired data types to contribute, for supporting (collective) sensemaking/decision-making around relevant policy initiatives, in a manner that does not require upload of sensitive personal data?  \\
-% \textbf{RQ2}: Leveraging worker contributions (of abstract data types/initiatives), what methods of data self-disclosures, cross-stakeholder communication and collective decision-making most effectively
-% \begin{enumerate}
-%     \item worker incentives for self-disclosures/data contributions
-%     \item collaborative, multi-stakeholder policy deliberation and
-%     \item practical impact on policy-making?
-% \end{enumerate}
+Driven by remaining design questions with Gig2Gether, as well as issues surfaced from the data donation literature at large, we focus on three sets of mechanisms for data production, outlined in the following questions:
+\section{Research Questions}
+
+\begin{enumerate}
+    \item[RQ1:] What are visualization methods for aggregating and representing contributed work data that aligns interpretations of such insights between policy experts and gig workers?  \\
+    \item[RQ2:] Which interaction mechanisms between stakeholders (and among workers) are necessary to achieving sustainable data exchange that is also  productive and influential to policymaking?
+    \item[RQ3:] What are attainable or practical models of ownership, moderation and governance for data collectives like Gig2Gether?
+\end{enumerate}
 % \section{Proposed Design of System Extensions}
 % \begin{itemize}
 %     \item Worker-constructed data initiatives on 1) data they know/hypothesize that platforms collect 2) information they desire to collect about platforms/customers for conducting sousveillance and 3) self-tracked data to keep personal informed (for purposes such as taxes) --- so as to gather evidence for proposing new policies for further regulations of platforms. Each piece of worker-contributed data initiative can be labeled with
@@ -65,12 +78,32 @@
 %     \item Ability for workers to collectively define community norms for moderation, governance and privacy
 % \end{itemize}
 
-% \section{Methods}
-\begin{enumerate}
-    \item Survey existing literature for strategies on community data donations \& initiatives, as well as methods of protecting individual and group-level worker privacy
-    \item Develop initial mock-ups of ideas for proposed system extensions 
-    \item Iteratively refine prototypes of system extensions with pilot workers
-    \item Conduct a between-subjects study with 2+ conditions to evaluate how new methods affect workers' motivations to contribute or levels of comfort with self-disclosures
-\end{enumerate}
+\section{Proposed Method}
+I plan to conduct this co-design study with a 3-stage protocol. In the initial ideation stage, I intend to engage with each stakeholder group individually, similar to the workshop structures in previous chapters. In this phase, both workers and policy experts will first be introduced to the concept of a worker-centered data-sharing tool for influencing policy. Then, participants will be presented with and asked about potential visualizations of worker data, followed by (interaction) mechanisms between workers and policy experts, followed by questions of ownership, moderation and governance. 
+At this point, participants will be introduced to the existing features of Gig2Gether. Together with the researcher, participant (groups) either integrate and iterate on their initial ideas for data production with the designs of Gig2Gether, or discuss why such fusion would be infeasible.
 
-\section{Timeline}
+In stage two, I will implement prototype versions of various iterated designs produced in stage one. The prototypes resultant from this stage will remain mid-fidelity, to the extent that workers can explore its functional features, but data produced during testing will not be stored or persisted.
+
+Finally, stage three will bring the two stakeholder groups together in shared sessions to evaluate and co-deliberate on the proposed and implemented design prototypes. The shared space will allow members of the two stakeholder groups to share insights, reactions and concerns regarding the developed prototype extensions of Gig2Gether. While participants will be encouraged to collaborate and discuss, the objective of this stage is to understand underlying motives to reactions to specific prototype features, with the hopes of coming to an understanding reasons for conflicting preferences. Participants will \textit{not} be required to settle or agree on designs at the end of the session, but each individual should voice their opinions (and ideally supporting rationales) for each proposed prototype, so as to open up room for discussion.
+
+% \subsection{Additional Considerations to Minimize Risks}
+Working cross-stakeholder can expose workers to power dynamics that were previously absent in workshops. To minimize such risks, I plan first to de-anonymize all worker-uploaded data, using only mock data for quantitative mappings and visualizations. Additionally, I hope to lead the discussions (in both stages 1 and 3) with designs ideated by workers, so as to not privilege the perspectives or priorities of policy experts -- who already wield decision-making power on what initiatives to focus on in real-world settings.
+
+
+% \begin{enumerate}
+%     \item Survey existing literature for strategies on community data donations \& initiatives, as well as methods of protecting individual and group-level worker privacy
+%     \item Develop initial mock-ups of ideas for proposed system extensions 
+%     \item Iteratively refine prototypes of system extensions with pilot workers
+%     \item Conduct a between-subjects study with 2+ conditions to evaluate how new methods affect workers' motivations to contribute or levels of comfort with self-disclosures
+% \end{enumerate}
+
+\section{Proposed Timeline}
+\begin{table}[h!]
+\centering
+\begin{tabular}{l|l}
+\multicolumn{1}{c|}{\textbf{Date}} & \multicolumn{1}{c}{\textbf{Milestones}} \\ \hline
+Jan-May 2025                       & Execution of Proposed Work              \\
+May 2025 / July 2025               & CSCW / CHI Deadlines                    \\
+Fall 2025                          & Defense                                
+\end{tabular}
+\end{table}

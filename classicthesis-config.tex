@@ -1,11 +1,18 @@
 \PassOptionsToPackage{utf8}{inputenc}
 	\usepackage{inputenc}
-
-\PassOptionsToPackage{eulerchapternumbers,listings,drafting,%
-					 pdfspacing,%floatperchapter,%linedheaders,%
-					 subfig,beramono,eulermath,parts}{classicthesis}                              
+\PassOptionsToPackage{
+eulerchapternumbers,
+listings,
+% drafting,
+pdfspacing,
+%floatperchapter,
+%linedheaders,
+subfig,
+beramono,
+eulermath,
+parts}{classicthesis}         
 \newcommand{\myTitle}{Empowering and Collectivizing Gig Workers: \xspace}
-\newcommand{\mySubtitle}{Towards Technology and Policy that Support Platform-based Labor \xspace}
+\newcommand{\mySubtitle}{Towards Technology and Policy in Support of Platform-based Labor \xspace}
 \newcommand{\myDegree}{Doctor of -Ingenieur (Dr.-Ing.)\xspace}
 \newcommand{\myName}{Jane Hsieh\xspace}
 \newcommand{\myProf}{Haiyi Zhu\xspace}
@@ -16,7 +23,7 @@
 \newcommand{\mySchool}{School of Computer Science\xspace}
 \newcommand{\myUni}{Carnegie Mellon University\xspace}
 \newcommand{\myLocation}{5000 Forbes Ave, Pittsburgh, PA 15213\xspace}
-\newcommand{\myTime}{Oct 2024\xspace}
+\newcommand{\myTime}{Jan 2025\xspace}
 \newcommand{\myVersion}{\xspace}
 
 \newcounter{dummy} % necessary for correct hyperlinks (to index, bib, etc.)
@@ -32,7 +39,6 @@
 \usepackage{csquotes}
 \usepackage{graphicx}
 \usepackage{placeins}
-
 \usepackage[most]{tcolorbox}
 \tcbset{
     on line, 
@@ -45,17 +51,14 @@
     colback=red!10,
     fontupper=\rmfamily\bfseries
 }
-
 \definecolor{babyblue}{rgb}{0.82, 0.96, 0.936} 
 \definecolor{maroon}{cmyk}{0, 0.87, 0.68, 0.32}
-
 % https://dev.to/anapimolodec/how-to-make-tags-in-overleaf-33pd
 \newcommand{\dr}[1]{\tcbox[colframe=babyblue, colback=babyblue!10]{
 \nameref{#1}}}
 
 \newcommand{\refone}[1]{\hyperref[#1]{\tcbox[colframe=lightgray, colback=lightgray]{#1}}}
 \newcommand{\reftwo}[1]{\hyperref[#1]{\tcbox[colframe=babyblue, colback=babyblue]{#1}}}
-
 \PassOptionsToPackage{%
     %backend=biber, %instead of bibtex
 	backend=bibtex8,bibencoding=ascii,%
@@ -87,10 +90,6 @@
     %\renewcommand{\bflabel}[1]{{#1}\hfill} % fix the list of acronyms --> no longer working
     %\renewcommand*{\acsfont}[1]{\textsc{#1}} 
     \renewcommand*{\aclabelfont}[1]{\acsfont{#1}}
-% ****************************************************************************************************
-
-
-% ****************************************************************************************************
 % 4. Setup floats: tables, (sub)figures, and captions
 % ****************************************************************************************************
 \usepackage{tabularx} % better tables
@@ -131,15 +130,7 @@
     belowcaptionskip=.75\baselineskip
     %frame=L
 } 
-% ****************************************************************************************************             
 
-
-% ****************************************************************************************************
-% 6. PDFLaTeX, hyperreferences and citation backreferences
-% ****************************************************************************************************
-% ********************************************************************
-% Using PDFLaTeX
-% ********************************************************************
 \PassOptionsToPackage{pdftex,hyperfootnotes=false,pdfpagelabels}{hyperref}
     \usepackage{hyperref}  % backref linktocpage pagebackref
 \pdfcompresslevel=9
@@ -150,7 +141,7 @@
 \usepackage{xstring} % For string manipulation
 \usepackage{multirow}
 \usepackage{authblk}
-\usepackage{ulem}
+\usepackage[normalem]{ulem}
 % ********************************************************************
 % Hyperreferences
 % ********************************************************************
@@ -208,14 +199,6 @@
             \providecommand{\subfigureautorefname}{\figureautorefname}%             
     }{\relax}
 \makeatother
-
-
-% ****************************************************************************************************
-% 7. Last calls before the bar closes
-% ****************************************************************************************************
-% ********************************************************************
-% Development Stuff
-% ********************************************************************
 \listfiles
 %\PassOptionsToPackage{l2tabu,orthodox,abort}{nag}
 %   \usepackage{nag}
